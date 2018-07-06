@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+    
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="guessing.css">
+
+  
+  <title>GUESSING Game</title>
+</head>
+
+<body>
+	<div id="header">
+		<div class="container">
+			<h3>THE GREAT</h3>
+			<h1>RGB( <span id="rgbValue"></span> )<h1>
+			<h3>GUESSING GAME</h3>
+		</div>
+	</div>
+	<!-- NAV  -->
+	<nav class="navbar navbar-expand-md ">
+	<div class="container">
+			<ul class="mr-auto navbar-nav">
+				<li class="nav-item" id="navRightItem" onclick="newColors()">NEW COLORS</li>
+			</ul>
+			<ul class="nav navbar-nav mr-auto">
+				<li class="nav-item message"><span id="bool"></span></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="nav-item active" id="easy" onclick="easyMode()">EASY</li>
+				<li class="nav-item" id="hard" onclick="hardMode()">HARD</li>
+			 </ul>
+		</div>
+	</nav> 
+	
+	<div id="color_palette">
+		<div class="container">
+			<table class="table">
+				<tbody>
+					<tr id="easyRow">
+						<td><button class="colorSquare easy" onclick="userAnswer('0')"></button></td>
+						<td><button class="colorSquare easy" onclick="userAnswer('1')"></button></td>
+						<td><button class="colorSquare easy" onclick="userAnswer('2')"></button></td>
+					</tr>
+					<tr id="hardRow" class="hidden">
+						<td><button class="colorSquare" onclick="userAnswer('3')"></button></td>
+						<td><button class="colorSquare" onclick="userAnswer('4')"></button></td>
+						<td><button class="colorSquare" onclick="userAnswer('5')"></button></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</body>
+  <script src="guessing.js"></script>
+</html>

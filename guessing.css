@@ -1,0 +1,73 @@
+body {
+background: #062733;
+font-family: 'Muli', sans-serif;
+font-weight:900;
+
+}
+
+#header {
+text-align: center;
+color: white;
+background: #098ebf;
+padding: 20px;
+}
+
+.navbar{
+color: #098ebf;
+background: white;
+padding: 0px;
+}
+
+.nav-item {
+padding: 5px;
+transition: all 1.0s;
+}
+
+.nav-item:hover {
+color: white;
+background: #098ebf;
+}
+
+.message:hover {
+color: black;
+background: white;
+}
+
+.active {
+color: white;
+background: #098ebf;
+}
+
+.container {
+max-width: 40%;
+}
+
+#color_palette {
+margin-top:20px;
+}
+
+td {
+height:200px;
+width: 200px;
+transition: all 0.3s;
+}
+
+.table td {
+border-top: none;
+}
+
+.hidden {
+display: none;
+}
+
+button{
+height: 100%;
+width: 100%;
+border-radius: 15px;
+}
+
+#bool {
+color: #062733;
+font-family: 'Muli', sans-serif;
+font-weight: 400;
+}
